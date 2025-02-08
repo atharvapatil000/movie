@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To All the Boys I've Loved Before - Ticket</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .ticket-container {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      overflow: hidden;
+      display: flex;
+      border: 2px dashed #d3d3d3;
+    }
+
+    .poster {
+      width: 40%;
+      position: relative;
+      background: url('https://upload.wikimedia.org/wikipedia/en/thumb/1/14/To_All_the_Boys_I%27ve_Loved_Before_poster.jpg/220px-To_All_the_Boys_I%27ve_Loved_Before_poster.jpg') no-repeat center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 10px;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .details {
+      padding: 20px;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .movie-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .movie-info {
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      margin-bottom: 8px;
+    }
+
+    .info-label {
+      font-weight: bold;
+    }
+
+    .ticket-footer {
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .barcode {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Barcode_example.svg/800px-Barcode_example.svg.png') no-repeat center;
+      background-size: contain;
+      height: 150px;
+      width: 150px;
+      margin: 10px auto;
+    }
+
+    .attendees {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .attendees-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket-container">
+    <div class="poster">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/BookMyShow_Logo.png/320px-BookMyShow_Logo.png" alt="BookMyShow Logo">
+      </div>
+    </div>
+
+    <div class="details">
+      <div class="movie-title">To All the Boys I've Loved Before</div>
+      <div class="movie-info">
+        <div class="info-item"><span class="info-label">Date:</span> February 14, 2025</div>
+        <div class="info-item"><span class="info-label">Time:</span> 7:00 PM</div>
+        <div class="info-item"><span class="info-label">Seat:</span> Row A, Seat 12</div>
+      </div>
+      <div class="attendees">
+        <div class="attendees-title">Attendees:</div>
+        <ul>
+          <li>Niharika Singh</li>
+          <li>Atharva Patil</li>
+          <li>Sel Singh Patil</li>
+        </ul>
+      </div>
+      <div class="ticket-footer">
+        <div class="barcode"></div>
+        Scan for entry
+      </div>
+    </div>
+  </div>
+</body>
+</html>
